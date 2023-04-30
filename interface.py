@@ -28,8 +28,13 @@ submit = st.sidebar.button("Submit")
 st.header("HELOC Risk Performance Prediction")
 
 #result
-with open('boosting_5.p', 'rb') as f:
-	model = pickle.load(f)
+import urllib.request
+
+url = 'https://raw.githubusercontent.com/zwen10/streanlit_project/main/boosting_5.p'
+
+with urllib.request.urlopen(url) as f:
+    model = pickle.load(f)
+
 prediction = model.predict([[E,O,AM,ND,RD]])[0]
 
 if prediction == 1:
