@@ -29,7 +29,7 @@ submit = st.sidebar.button("Submit")
 st.header("HELOC Risk Performance Prediction")
 
 #result
-with open('/Users/wenzhishan/Desktop/boosting_5.p', 'rb') as f:
+with open('boosting_5.p', 'rb') as f:
 	model = pickle.load(f)
 prediction = model.predict([[E,O,AM,ND,RD]])[0]
 
