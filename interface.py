@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import seaborn as sns
 import numpy as np
 
 # sidebar with parameters
