@@ -30,7 +30,7 @@ st.header("HELOC Risk Performance Prediction")
 #result
 import urllib.request
 
-url = 'https://github.com/zwen10/streanlit_project/blob/main/boosting_5.p'
+url = 'https://github.com/zwen10/streanlit_project/blob/main/boosting_5.pkl'
 
 with urllib.request.urlopen(url) as f:
     model = pickle.load(f)
