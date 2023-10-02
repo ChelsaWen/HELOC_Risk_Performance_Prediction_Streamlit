@@ -29,11 +29,13 @@ st.header("HELOC Risk Performance Prediction")
 
 #result
 import urllib.request
+from io import BytesIO
 
 url = 'https://github.com/zwen10/streanlit_project/blob/main/boosting_5.pkl'
 
-with urllib.request.urlopen(url) as f:
-    model = pickle.load(f)
+response = urllib.request.urlopen(url)
+buffer = BytesIO(response.read())
+model = pickle.load(f)
 
 prediction = model.predict([[E,O,AM,ND,RD]])[0]
 
