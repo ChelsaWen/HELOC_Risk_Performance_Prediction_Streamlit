@@ -1,2 +1,2 @@
 # HELOC Risk Performance Prediction in Streamlit
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zwen10-streanlit-project-interface-0iuwdu.streamlit.app/)
+![Interface Overview](https://github.com/ChelsaWen/HELOC_Risk_Performance_Prediction_Streamlit/blob/main/Interface.png)
